@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+
+    <title>Shop.Thinking.Co</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit&family=Poppins:ital,wght@0,300;0,500;0,600;0,800;0,900;1,400&display=swap');
+
+body{
+    font-family: 'Fraunces', serif;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(2, 2, 137);
+}
+
+.pics{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    margin-left: 10px;
+    margin-top: 30px;
+
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(6, 6, 100);
+
+}
+
+.but{
+    text-align: center;
+
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid  rgb(20, 20, 186);
+    color: #fff;
+    background: rgb(20, 20, 186);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button:hover{
+    border:2px solid #fff;
+    background: rgba(0, 0, 255, 0.759);
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">Think!ng Co.</div>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="find.html">FIND A TUTOR</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <h1>SHOP</h1>
+    
+    <div class="call"> <br>
+        <h5 class="life">Lifetime access</h5>
+        <h2 class="get">Get up to 60% off on all laguages <br> Sign up now and find a tutor</h2> <br>
+    </div>
+
+<p>
+    We offer a wide range of online Danish textbooks that are free for download and are tailored to different proficiency levels, from beginner to advanced.
+</p>
+
+<div class="pics">
+    <img src="./images/danish text.jpg" alt="textbook pic" width="200px">
+    <img src="./images/danish 2.jpg" alt="textbook pic" width="200px" height="300px">
+    <img src="./images/danish 3.jpg" alt="textbook pic" width="213px">
+
+</div> <br><br>
+
+<div class="but">
+    <button>Buy now</button>
+</div>
+
+<br><br><br>
+
+
+
+
+<footer>
+    &copy;Thinking Co.
+</footer>
+
+
+
+
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".navbar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

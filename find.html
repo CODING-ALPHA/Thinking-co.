@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="find.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <title>LOGIN</title> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">Think!ng Co.</div>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+
+<div class="videodiv">
+    
+        <video autoplay loop muted plays-inline class="backvideo">
+            <source src="./Bg-video/think 2.mp4" type="video/mp4">
+        </video>
+    
+    
+        <!---for the inputs-->
+        <div class="form">
+            <div class="container"> <br>
+                <h2><span>Think!ng Co.</span> <br> Sign up to find a tutor</h2> <br>
+                <label for="firstname" required=""> FIRST NAME</label>
+                <input type="text" placeholder="firstname"> <br>
+                <label for="surname">SURNAME</label>
+                <input type="text" placeholder="surname"> <br>
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="EMAIL"> <br>
+                <label for="campus">PASSWORD</label>
+                <input type="password" placeholder="" id="campus"> <br>
+                <a href="#"><input type="button" onclick="alert('welcome')" value="SIGN UP" id="button" ></a>
+                 <label for="already have an acc">Already have an account</label> 
+                <br>
+                <h3>already have an account? <a href="">Login</a></h3>
+    
+    
+            </div>
+    
+    
+            <!--For the footer-->
+            <div class="footer">
+                &copy;Think!ng Co.
+            </div>
+        </div>
+
+</div>
+
+     
+  
+
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+  
+</body>
+</html>
